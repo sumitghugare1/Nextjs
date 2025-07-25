@@ -23,7 +23,7 @@ export interface User extends Document{
     createdAt: Date;
     updatedAt: Date;
     isDeleted: boolean;
-    isverified?: boolean; // Optional field for verification status
+    isverified?: boolean;
 
 }
 
@@ -41,7 +41,7 @@ const UserSchema: Schema<User> = new Schema({
     updatedAt: { type: Date, default: Date.now },
     isDeleted: { type: Boolean, default: false },
      isverified: { type: Boolean, default: false } 
-     // Optional field for verification status
+     
     });
 
 
